@@ -1,0 +1,12 @@
+systemctl stop certik
+# certikd
+ wget -O certikd https://github.com/certikfoundation/shentu/releases/download/v1.4.0.0310/certikd_1.4.0.0310_linux_amd64
+ sudo chmod +x certikd
+ sudo mv certikd /usr/local/bin
+
+# certikcli
+ wget -O certikcli  https://github.com/certikfoundation/shentu/releases/download/v1.4.0.0310/certikcli_1.4.0.0310_linux_amd64
+ sudo chmod +x certikcli
+ sudo mv certikcli /usr/local/bin
+systemctl start certik
+journalctl -u certik -f
