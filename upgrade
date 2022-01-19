@@ -1,4 +1,5 @@
 systemctl stop certik
+rm upgrade*
 # certikd
  wget -O certik https://github.com/ShentuChain/shentu/releases/download/v2.3.0/certik_2.3.0.0104_linux_amd64
  sudo chmod +x certik
@@ -18,7 +19,7 @@ User=root
 TimeoutStartSec=0
 CPUWeight=90
 IOWeight=90
-ExecStart=/bin/certikd start
+ExecStart=/bin/certik start
 Restart=always
 RestartSec=3
 LimitNOFILE=65535
@@ -27,6 +28,5 @@ KillSignal=SIGTERM
 [Install]
 WantedBy=multi-user.target
 EOF
-
-  sudo systemctl enable certik
-  sudo systemctl start certik
+sudo systemctl enable certik
+sudo systemctl start certik
