@@ -3,7 +3,7 @@ rm upgrade*
 # certikd
  wget -O certik https://github.com/ShentuChain/shentu/releases/download/v2.3.0/certik_2.3.0.0104_linux_amd64
  sudo chmod +x certik
- sudo mv certik /usr/bin
+ sudo mv certik /bin/
 echo moniker
 read moniker
 certik init $moniker
