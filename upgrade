@@ -6,7 +6,7 @@ rm upgrade*
  sudo mv certik /bin/
 echo moniker
 read moniker
-certik init $moniker
+certik init $moniker --chain-id shentu-2.2
 rm  ~/.certik/config/genesis.json
 wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/shentu-2.2/genesis.json
 mv genesis.json ~/.certik/config/genesis.json
