@@ -2,7 +2,7 @@ systemctl stop certik
 rm upgrade*
 # certikd
 certik unsafe-reset-all
- wget -O certik https://github.com/ShentuChain/shentu/releases/download/v2.2.0/certik_2.2.0.0908_linux_amd64
+ wget -O certik https://github.com/ShentuChain/shentu/releases/download/v2.3.0/certik_2.3.0.0104_linux_amd64
  sudo chmod +x certik
  sudo mv certik /bin/
 echo moniker
